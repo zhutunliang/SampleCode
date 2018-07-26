@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19191A707B13C1F8D5CB61E7 /* libPods-SGImageAddUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1514BE33D3A858EB5E5349D5 /* libPods-SGImageAddUITests.a */; };
+		6FCCFFBECFA4CC59CB3B789A /* libPods-SGImageAddTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59106113E9B5DCEA160D4A62 /* libPods-SGImageAddTests.a */; };
+		99B449CDDE3E8A10CCA1E37E /* libPods-SGImageAdd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C659CF17A97D845CB8070EF0 /* libPods-SGImageAdd.a */; };
+		F106584B2109783300E2B49D /* UIImage+SGAddRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = F106584A2109783300E2B49D /* UIImage+SGAddRoundedCorner.m */; };
+		F15A0F1B210860CB009415DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F1A210860CB009415DA /* AppDelegate.m */; };
+		F15A0F1E210860CB009415DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F1D210860CB009415DA /* ViewController.m */; };
+		F15A0F21210860CB009415DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15A0F1F210860CB009415DA /* Main.storyboard */; };
+		F15A0F23210860CD009415DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15A0F22210860CD009415DA /* Assets.xcassets */; };
+		F15A0F26210860CD009415DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15A0F24210860CD009415DA /* LaunchScreen.storyboard */; };
+		F15A0F29210860CD009415DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F28210860CD009415DA /* main.m */; };
+		F15A0F33210860CD009415DA /* SGImageAddTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F32210860CD009415DA /* SGImageAddTests.m */; };
+		F15A0F3E210860CD009415DA /* SGImageAddUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F3D210860CD009415DA /* SGImageAddUITests.m */; };
+		F15A0F4D2108610D009415DA /* UIImage+SGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F4C2108610D009415DA /* UIImage+SGAdd.m */; };
+		F15A0F4F21086434009415DA /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F15A0F4E21086434009415DA /* demo.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F15A0F2F210860CD009415DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15A0F0E210860CB009415DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15A0F15210860CB009415DA;
+			remoteInfo = SGImageAdd;
+		};
+		F15A0F3A210860CD009415DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15A0F0E210860CB009415DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15A0F15210860CB009415DA;
+			remoteInfo = SGImageAdd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1514BE33D3A858EB5E5349D5 /* libPods-SGImageAddUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGImageAddUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A11620725E0FA1774260491 /* Pods-SGImageAddUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageAddUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageAddUITests/Pods-SGImageAddUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3AAE9F2ED30C412C7B1EC97A /* Pods-SGImageAdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageAdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageAdd/Pods-SGImageAdd.release.xcconfig"; sourceTree = "<group>"; };
+		59106113E9B5DCEA160D4A62 /* libPods-SGImageAddTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGImageAddTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E42282C04E70C07D947417D /* Pods-SGImageAddTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageAddTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageAddTests/Pods-SGImageAddTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7DA679A8B1FCABB332F9E16 /* Pods-SGImageAdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageAdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageAdd/Pods-SGImageAdd.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B77CCEAD33A9BF63539DDD /* Pods-SGImageAddTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageAddTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageAddTests/Pods-SGImageAddTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C659CF17A97D845CB8070EF0 /* libPods-SGImageAdd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGImageAdd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF545A630B48BD44CF632B03 /* Pods-SGImageAddUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageAddUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageAddUITests/Pods-SGImageAddUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F10658492109783300E2B49D /* UIImage+SGAddRoundedCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGAddRoundedCorner.h"; sourceTree = "<group>"; };
+		F106584A2109783300E2B49D /* UIImage+SGAddRoundedCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGAddRoundedCorner.m"; sourceTree = "<group>"; };
+		F15A0F16210860CB009415DA /* SGImageAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGImageAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15A0F19210860CB009415DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F15A0F1A210860CB009415DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F15A0F1C210860CB009415DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F15A0F1D210860CB009415DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F15A0F20210860CB009415DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F15A0F22210860CD009415DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F15A0F25210860CD009415DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F15A0F27210860CD009415DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15A0F28210860CD009415DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F15A0F2E210860CD009415DA /* SGImageAddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGImageAddTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15A0F32210860CD009415DA /* SGImageAddTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGImageAddTests.m; sourceTree = "<group>"; };
+		F15A0F34210860CD009415DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15A0F39210860CD009415DA /* SGImageAddUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGImageAddUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15A0F3D210860CD009415DA /* SGImageAddUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGImageAddUITests.m; sourceTree = "<group>"; };
+		F15A0F3F210860CD009415DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15A0F4B2108610D009415DA /* UIImage+SGAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGAdd.h"; sourceTree = "<group>"; };
+		F15A0F4C2108610D009415DA /* UIImage+SGAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGAdd.m"; sourceTree = "<group>"; };
+		F15A0F4E21086434009415DA /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F15A0F13210860CB009415DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B449CDDE3E8A10CCA1E37E /* libPods-SGImageAdd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15A0F2B210860CD009415DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FCCFFBECFA4CC59CB3B789A /* libPods-SGImageAddTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15A0F36210860CD009415DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19191A707B13C1F8D5CB61E7 /* libPods-SGImageAddUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92A8A08621EDD13E2EB97E3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7DA679A8B1FCABB332F9E16 /* Pods-SGImageAdd.debug.xcconfig */,
+				3AAE9F2ED30C412C7B1EC97A /* Pods-SGImageAdd.release.xcconfig */,
+				B5B77CCEAD33A9BF63539DDD /* Pods-SGImageAddTests.debug.xcconfig */,
+				9E42282C04E70C07D947417D /* Pods-SGImageAddTests.release.xcconfig */,
+				CF545A630B48BD44CF632B03 /* Pods-SGImageAddUITests.debug.xcconfig */,
+				1A11620725E0FA1774260491 /* Pods-SGImageAddUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F15A0F0D210860CB009415DA = {
+			isa = PBXGroup;
+			children = (
+				F15A0F18210860CB009415DA /* SGImageAdd */,
+				F15A0F31210860CD009415DA /* SGImageAddTests */,
+				F15A0F3C210860CD009415DA /* SGImageAddUITests */,
+				F15A0F17210860CB009415DA /* Products */,
+				92A8A08621EDD13E2EB97E3C /* Pods */,
+				F2D500E3FDEEC3AA1067428D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F15A0F17210860CB009415DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F15A0F16210860CB009415DA /* SGImageAdd.app */,
+				F15A0F2E210860CD009415DA /* SGImageAddTests.xctest */,
+				F15A0F39210860CD009415DA /* SGImageAddUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F15A0F18210860CB009415DA /* SGImageAdd */ = {
+			isa = PBXGroup;
+			children = (
+				F15A0F19210860CB009415DA /* AppDelegate.h */,
+				F15A0F1A210860CB009415DA /* AppDelegate.m */,
+				F15A0F1C210860CB009415DA /* ViewController.h */,
+				F15A0F1D210860CB009415DA /* ViewController.m */,
+				F15A0F4E21086434009415DA /* demo.jpg */,
+				F15A0F1F210860CB009415DA /* Main.storyboard */,
+				F15A0F22210860CD009415DA /* Assets.xcassets */,
+				F15A0F24210860CD009415DA /* LaunchScreen.storyboard */,
+				F15A0F27210860CD009415DA /* Info.plist */,
+				F15A0F28210860CD009415DA /* main.m */,
+				F15A0F4B2108610D009415DA /* UIImage+SGAdd.h */,
+				F15A0F4C2108610D009415DA /* UIImage+SGAdd.m */,
+				F10658492109783300E2B49D /* UIImage+SGAddRoundedCorner.h */,
+				F106584A2109783300E2B49D /* UIImage+SGAddRoundedCorner.m */,
+			);
+			path = SGImageAdd;
+			sourceTree = "<group>";
+		};
+		F15A0F31210860CD009415DA /* SGImageAddTests */ = {
+			isa = PBXGroup;
+			children = (
+				F15A0F32210860CD009415DA /* SGImageAddTests.m */,
+				F15A0F34210860CD009415DA /* Info.plist */,
+			);
+			path = SGImageAddTests;
+			sourceTree = "<group>";
+		};
+		F15A0F3C210860CD009415DA /* SGImageAddUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F15A0F3D210860CD009415DA /* SGImageAddUITests.m */,
+				F15A0F3F210860CD009415DA /* Info.plist */,
+			);
+			path = SGImageAddUITests;
+			sourceTree = "<group>";
+		};
+		F2D500E3FDEEC3AA1067428D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C659CF17A97D845CB8070EF0 /* libPods-SGImageAdd.a */,
+				59106113E9B5DCEA160D4A62 /* libPods-SGImageAddTests.a */,
+				1514BE33D3A858EB5E5349D5 /* libPods-SGImageAddUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F15A0F15210860CB009415DA /* SGImageAdd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15A0F42210860CD009415DA /* Build configuration list for PBXNativeTarget "SGImageAdd" */;
+			buildPhases = (
+				94202DE05D62BBF2D5F4879D /* [CP] Check Pods Manifest.lock */,
+				F15A0F12210860CB009415DA /* Sources */,
+				F15A0F13210860CB009415DA /* Frameworks */,
+				F15A0F14210860CB009415DA /* Resources */,
+				2C53333A3CCB10BDAEEF10D0 /* [CP] Embed Pods Frameworks */,
+				3EC58C3B86E63877432CE3A7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGImageAdd;
+			productName = SGImageAdd;
+			productReference = F15A0F16210860CB009415DA /* SGImageAdd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F15A0F2D210860CD009415DA /* SGImageAddTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15A0F45210860CD009415DA /* Build configuration list for PBXNativeTarget "SGImageAddTests" */;
+			buildPhases = (
+				B5E0A4BAEE37ECE96BFED37C /* [CP] Check Pods Manifest.lock */,
+				F15A0F2A210860CD009415DA /* Sources */,
+				F15A0F2B210860CD009415DA /* Frameworks */,
+				F15A0F2C210860CD009415DA /* Resources */,
+				5045E80B905B6752533B58EB /* [CP] Embed Pods Frameworks */,
+				0093A9A8A6D37FD83CA9CD2E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15A0F30210860CD009415DA /* PBXTargetDependency */,
+			);
+			name = SGImageAddTests;
+			productName = SGImageAddTests;
+			productReference = F15A0F2E210860CD009415DA /* SGImageAddTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F15A0F38210860CD009415DA /* SGImageAddUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15A0F48210860CD009415DA /* Build configuration list for PBXNativeTarget "SGImageAddUITests" */;
+			buildPhases = (
+				935CFC405C1D26496D541D5D /* [CP] Check Pods Manifest.lock */,
+				F15A0F35210860CD009415DA /* Sources */,
+				F15A0F36210860CD009415DA /* Frameworks */,
+				F15A0F37210860CD009415DA /* Resources */,
+				0945000ECB4E08DE321E0F56 /* [CP] Embed Pods Frameworks */,
+				CFE616520717F529D3CC44A2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15A0F3B210860CD009415DA /* PBXTargetDependency */,
+			);
+			name = SGImageAddUITests;
+			productName = SGImageAddUITests;
+			productReference = F15A0F39210860CD009415DA /* SGImageAddUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F15A0F0E210860CB009415DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "搜狗";
+				TargetAttributes = {
+					F15A0F15210860CB009415DA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F15A0F2D210860CD009415DA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F15A0F15210860CB009415DA;
+					};
+					F15A0F38210860CD009415DA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F15A0F15210860CB009415DA;
+					};
+				};
+			};
+			buildConfigurationList = F15A0F11210860CB009415DA /* Build configuration list for PBXProject "SGImageAdd" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F15A0F0D210860CB009415DA;
+			productRefGroup = F15A0F17210860CB009415DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F15A0F15210860CB009415DA /* SGImageAdd */,
+				F15A0F2D210860CD009415DA /* SGImageAddTests */,
+				F15A0F38210860CD009415DA /* SGImageAddUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F15A0F14210860CB009415DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15A0F4F21086434009415DA /* demo.jpg in Resources */,
+				F15A0F26210860CD009415DA /* LaunchScreen.storyboard in Resources */,
+				F15A0F23210860CD009415DA /* Assets.xcassets in Resources */,
+				F15A0F21210860CB009415DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15A0F2C210860CD009415DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15A0F37210860CD009415DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0093A9A8A6D37FD83CA9CD2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageAddTests/Pods-SGImageAddTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0945000ECB4E08DE321E0F56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageAddUITests/Pods-SGImageAddUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C53333A3CCB10BDAEEF10D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageAdd/Pods-SGImageAdd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EC58C3B86E63877432CE3A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageAdd/Pods-SGImageAdd-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5045E80B905B6752533B58EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageAddTests/Pods-SGImageAddTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		935CFC405C1D26496D541D5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SGImageAddUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94202DE05D62BBF2D5F4879D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SGImageAdd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E0A4BAEE37ECE96BFED37C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SGImageAddTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFE616520717F529D3CC44A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageAddUITests/Pods-SGImageAddUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F15A0F12210860CB009415DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15A0F1E210860CB009415DA /* ViewController.m in Sources */,
+				F106584B2109783300E2B49D /* UIImage+SGAddRoundedCorner.m in Sources */,
+				F15A0F4D2108610D009415DA /* UIImage+SGAdd.m in Sources */,
+				F15A0F29210860CD009415DA /* main.m in Sources */,
+				F15A0F1B210860CB009415DA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15A0F2A210860CD009415DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15A0F33210860CD009415DA /* SGImageAddTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15A0F35210860CD009415DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15A0F3E210860CD009415DA /* SGImageAddUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F15A0F30210860CD009415DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15A0F15210860CB009415DA /* SGImageAdd */;
+			targetProxy = F15A0F2F210860CD009415DA /* PBXContainerItemProxy */;
+		};
+		F15A0F3B210860CD009415DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15A0F15210860CB009415DA /* SGImageAdd */;
+			targetProxy = F15A0F3A210860CD009415DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F15A0F1F210860CB009415DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15A0F20210860CB009415DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F15A0F24210860CD009415DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15A0F25210860CD009415DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F15A0F40210860CD009415DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F15A0F41210860CD009415DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F15A0F43210860CD009415DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7DA679A8B1FCABB332F9E16 /* Pods-SGImageAdd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SGImageAdd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test2.SGImageAdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F15A0F44210860CD009415DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAE9F2ED30C412C7B1EC97A /* Pods-SGImageAdd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SGImageAdd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test2.SGImageAdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F15A0F46210860CD009415DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B77CCEAD33A9BF63539DDD /* Pods-SGImageAddTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SGImageAddTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test2.SGImageAddTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGImageAdd.app/SGImageAdd";
+			};
+			name = Debug;
+		};
+		F15A0F47210860CD009415DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E42282C04E70C07D947417D /* Pods-SGImageAddTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SGImageAddTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test2.SGImageAddTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGImageAdd.app/SGImageAdd";
+			};
+			name = Release;
+		};
+		F15A0F49210860CD009415DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF545A630B48BD44CF632B03 /* Pods-SGImageAddUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SGImageAddUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test2.SGImageAddUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SGImageAdd;
+			};
+			name = Debug;
+		};
+		F15A0F4A210860CD009415DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A11620725E0FA1774260491 /* Pods-SGImageAddUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SGImageAddUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test2.SGImageAddUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SGImageAdd;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F15A0F11210860CB009415DA /* Build configuration list for PBXProject "SGImageAdd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15A0F40210860CD009415DA /* Debug */,
+				F15A0F41210860CD009415DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15A0F42210860CD009415DA /* Build configuration list for PBXNativeTarget "SGImageAdd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15A0F43210860CD009415DA /* Debug */,
+				F15A0F44210860CD009415DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15A0F45210860CD009415DA /* Build configuration list for PBXNativeTarget "SGImageAddTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15A0F46210860CD009415DA /* Debug */,
+				F15A0F47210860CD009415DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15A0F48210860CD009415DA /* Build configuration list for PBXNativeTarget "SGImageAddUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15A0F49210860CD009415DA /* Debug */,
+				F15A0F4A210860CD009415DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F15A0F0E210860CB009415DA /* Project object */;
+}
