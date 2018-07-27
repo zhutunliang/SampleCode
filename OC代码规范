@@ -1,0 +1,166 @@
+OC代码规范
+
+1.应该使用US英语，而不是AM英语
+
+2.代码组织
+在函数分组和protocol/delegate实现中使用 #pragma mark - 来分方法，要遵循以下一般结构：
+
+#pragma mark - Lifecycle
+#pragma mark - Custom 
+#pragma mark - IBActions
+#pragma mark - Public
+#pragma mark - Private
+
+
+#pragma mark - Protocol conformance
+#pragma mark - UITextFieldDelegate
+#pragma mark - UITableViewDataSource
+#pragma mark - UITableViewDelegate
+
+#pragma mark - NSCoping
+#pragma mark - NSObject
+
+
+*** 分组之间空两行，方法之间空一行 ***
+
+3.方法大括号和其他大括号（if/else/switch/while 等）总是在同一行语句打开但是在新行中关闭。
+
+if (user.isHappy){
+	// Do something
+} else {
+	// Do something else
+}
+
+4.命名
+Apple的命名规则尽可能坚持长的，描述性的方法和变量名是好的。
+例如： UIButton *settingsButton;
+不应该：UIButton *setBtn;
+
+
+5.常亮
+
+常亮是容易重复被使用和无需通过查找和代替就能快速修改值。 常亮应该使用static来
+声明而不是使用#define ,除非显示地使用宏。
+
+应该：
+static NSString * const RWTAboutViewControllerCompanyName = @"RayWenderlich.com";
+
+static CGFloat const RWTImageThumbnailHeight = 50.0f;
+
+
+不应该：
+
+#define CompanyName @""
+#define ThumbnailHeight 2
+
+
+6.init 方法
+init方法应该遵循Apple生成代码模块的命名规范。返回类型应该使用instancetype而不是id
+
+7.类构造方法
+在类构造方法被使用时，它应该返回类型是instancetype 而不是 id ，这样确保编译器正确地推断结果类型
+
+8.黄金路径
+
+当使用条件语句编译时，左手边的代码应该是“golden” 或 ‘happy’路径。 也就是不要嵌套if语句，多个返回语句也是OK。
+
+应该：
+- (void)someMethod {
+	if (![someOther boolValue]) {
+	    return;
+	}
+	// Do something important
+}
+
+不应该：
+- (void)someMethod {
+	if ([someOther boolValue]) {
+	    // Do something important
+	}
+}
+
+
+对NotificationName 声明方式的理解
+在AFN中，我们可以看到，在 .h 中有如下声明：
+
+FOUNDATION_EXPORT NSString * const AFNetworkingReachabilityDidChangeNotification；
+
+FOUNDATION_EXPORT NSString * const AFNetworkingReachabilityNotificationStatusItem;
+
+在 .m 中有如下声明：
+NSString * const AFNetworkingReachabilityDidChangeNotification = @"com.alamofire.networking.reachability.change";
+
+NSString * const AFNetworkingReachabilityNotificationStatusItem = @"AFNetworkingReachabilityNotificationStatusItem";
+
+那么，就可以在本模块或者其他模块使用 AFNetworkingReachabilityDidChangeNotification 、 AFNetworkingReachabilityNotificationStatusItem
+
+这里需要解释的一点，是，FOUNDATION_EXPORT
+extern 是c/C++语言中表明函数和全局变量作用范围（可见性）的关键字。 
+该关键字告诉编译器，其声明的函数和变量可以在本模块或者其他模块中使用。 
+通常，在模块在头文件中对本模块想提供给其他模块使用的函数和全局变量以关键字extern声明。 
+
+例如，在模块B想要引用模块A中定义的全局变量和函数时，只包含模块A的头文件即可。 这样，模块B调用模块A的函数时，在编译阶段，模块B虽然找不到该函数，但是并不会报错，它会在链接阶段从模块A编译生成的目标代码中找到此函数或此变量。
+
+与 extern 对应的关键字是 static . 被 static 修饰的全局变量或函数，只能在本模块中使用。 因此，一个函数或变量只能在本模块使用时，不能够使用extern修饰
+
+
+
+
+
+如果网络获取的属性数据为数值型，则定义属性也应该为数值型； 如果是枚举类型，则应定义对应枚举类型；不应该将数值定义为NSString字符串类型。
+
+// 正确
+@property (copy,nonatomic) UserStatus *userStatus;
+// 错误
+@property (copy,nonatomic) NSString *userStatus;
+
+
+
+#####定义普通常量以字母k开头
+// 普通常量定义
+NSString * const kUserKey = @"kUserKey";
+CGFloat const kTopViewHeight = 50;
+
+
+只在某一个特定文件里面使用的常量，用static； static 关键字保证变量只有文件作用域。
+可以避免变量重命名造成的连接错误问题。 
+如： static CGFloat const RWImageThumbnailHeight = 50.0;
+
+对属性的注释一般用如下形式
+/** 用户名 */
+
+#####通知和异常 命名规范#####
+通知常量命名
+格式: [相关联的类名字] + [Did | Will] + [独一无二的一段名称] + Notification
+
+建议:定义通知常量不采用宏定义的方法;
+
+.h文件, 全局通知声明时需加上UIKIT_EXTERN关键字；
+
+.m文件, 通知常量名和值必须保持一致。
+
+// .h文件
+// 全局通知声明时需加上UIKIT_EXTERN关键字
+UIKIT_EXTERN NSString *const UIKeyboardDidChangeFrameNotification ;
+
+// .m文件, 通知常量名和值必须保持一致
+NSString *const UIKeyboardDidChangeFrameNotification = @"UIKeyboardDidChangeFrameNotification";
+
+#####异常命名规则：
+异常名字的命名规则：[前缀] + [独一无二的一段名称] + Exception 如：NSColorListIOException
+
+
+instancetype 与 id 的区别
+instancetype 可以关联返回类型，id 不会关联返回类型，不会提示到具体的类名
+
+
+
+
+
+
+
+
+
+
+
+
