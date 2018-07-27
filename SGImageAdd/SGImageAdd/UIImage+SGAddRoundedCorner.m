@@ -7,6 +7,7 @@
 //
 
 #import "UIImage+SGAddRoundedCorner.h"
+#import "UIBezierPath+SGUtils.h"
 #import <YYCache/YYCache.h>
 
 #define MASKImagePath @"sg_maskImage"
@@ -44,7 +45,7 @@ static NSString *createMaskImageKey(CGSize size,CGFloat cornerRadisu)
     // 判断缓存是否存在
     UIImage *image = (UIImage *)[cache objectForKey:maskImageKey];
     if (!image) {
-        UIImage *maskImage = [UIImage maskRoundCornerRadiusImageWithColor:color cornerRadii:CGSizeMake(radius, radius) size:size corners:UIRectCornerAllCorners borderColor:[UIColor clearColor] borderWidth:0];
+        UIImage *maskImage = [UIImage maskRoundCornerRadiusImageWithColor:color cornerRadii:CGSizeMake(radius, radius) size:size corners:UIRectCornerAllCorners borderColor:[UIColor redColor] borderWidth:1];
         [cache setObject:maskImage forKey:maskImageKey];
         image = maskImage;
     }
@@ -96,6 +97,26 @@ static NSString *createMaskImageKey(CGSize size,CGFloat cornerRadisu)
     UIImage * newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
+}
+
+/*@[][左上角、左下角、右下角、右上角]*/
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size cornerRadiusArray:(NSArray<NSNumber *> *)cornerRadius
+{
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    
+    color = color ? color : [UIColor whiteColor];
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, size.width, size.height) cornerRadiusArray:cornerRadius lineWidth:0];
+    [path addClip];
+    [path fill];
+    
+    UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultImage;
 }
 
 @end

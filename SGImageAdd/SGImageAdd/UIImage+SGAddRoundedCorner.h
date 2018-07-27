@@ -30,6 +30,6 @@
  */
 - (UIImage *)imageAddCornerWithRadius:(CGFloat)radius andSize:(CGSize)size;
 
-
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size cornerRadiusArray:(NSArray<NSNumber *> *)cornerRadius;
 
 @end

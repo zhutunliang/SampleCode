@@ -11,6 +11,7 @@
 		6FCCFFBECFA4CC59CB3B789A /* libPods-SGImageAddTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59106113E9B5DCEA160D4A62 /* libPods-SGImageAddTests.a */; };
 		99B449CDDE3E8A10CCA1E37E /* libPods-SGImageAdd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C659CF17A97D845CB8070EF0 /* libPods-SGImageAdd.a */; };
 		F106584B2109783300E2B49D /* UIImage+SGAddRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = F106584A2109783300E2B49D /* UIImage+SGAddRoundedCorner.m */; };
+		F106584E210B1F2A00E2B49D /* UIBezierPath+SGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F106584D210B1F2900E2B49D /* UIBezierPath+SGUtils.m */; };
 		F15A0F1B210860CB009415DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F1A210860CB009415DA /* AppDelegate.m */; };
 		F15A0F1E210860CB009415DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F1D210860CB009415DA /* ViewController.m */; };
 		F15A0F21210860CB009415DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15A0F1F210860CB009415DA /* Main.storyboard */; };
@@ -52,6 +53,8 @@
 		CF545A630B48BD44CF632B03 /* Pods-SGImageAddUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageAddUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageAddUITests/Pods-SGImageAddUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F10658492109783300E2B49D /* UIImage+SGAddRoundedCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGAddRoundedCorner.h"; sourceTree = "<group>"; };
 		F106584A2109783300E2B49D /* UIImage+SGAddRoundedCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGAddRoundedCorner.m"; sourceTree = "<group>"; };
+		F106584C210B1F2900E2B49D /* UIBezierPath+SGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+SGUtils.h"; sourceTree = "<group>"; };
+		F106584D210B1F2900E2B49D /* UIBezierPath+SGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+SGUtils.m"; sourceTree = "<group>"; };
 		F15A0F16210860CB009415DA /* SGImageAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGImageAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A0F19210860CB009415DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F15A0F1A210860CB009415DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				F15A0F24210860CD009415DA /* LaunchScreen.storyboard */,
 				F15A0F27210860CD009415DA /* Info.plist */,
 				F15A0F28210860CD009415DA /* main.m */,
+				F106584C210B1F2900E2B49D /* UIBezierPath+SGUtils.h */,
+				F106584D210B1F2900E2B49D /* UIBezierPath+SGUtils.m */,
 				F15A0F4B2108610D009415DA /* UIImage+SGAdd.h */,
 				F15A0F4C2108610D009415DA /* UIImage+SGAdd.m */,
 				F10658492109783300E2B49D /* UIImage+SGAddRoundedCorner.h */,
@@ -473,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15A0F1E210860CB009415DA /* ViewController.m in Sources */,
+				F106584E210B1F2A00E2B49D /* UIBezierPath+SGUtils.m in Sources */,
 				F106584B2109783300E2B49D /* UIImage+SGAddRoundedCorner.m in Sources */,
 				F15A0F4D2108610D009415DA /* UIImage+SGAdd.m in Sources */,
 				F15A0F29210860CD009415DA /* main.m in Sources */,
