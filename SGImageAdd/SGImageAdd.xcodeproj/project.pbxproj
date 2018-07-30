@@ -12,6 +12,8 @@
 		99B449CDDE3E8A10CCA1E37E /* libPods-SGImageAdd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C659CF17A97D845CB8070EF0 /* libPods-SGImageAdd.a */; };
 		F106584B2109783300E2B49D /* UIImage+SGAddRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = F106584A2109783300E2B49D /* UIImage+SGAddRoundedCorner.m */; };
 		F106584E210B1F2A00E2B49D /* UIBezierPath+SGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F106584D210B1F2900E2B49D /* UIBezierPath+SGUtils.m */; };
+		F106585B210EC8D100E2B49D /* UIImageView+SGAddRoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = F1065857210EC8D100E2B49D /* UIImageView+SGAddRoundCorner.m */; };
+		F106585C210EC8D100E2B49D /* UIImage+SGAddRoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = F1065858210EC8D100E2B49D /* UIImage+SGAddRoundCorner.m */; };
 		F15A0F1B210860CB009415DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F1A210860CB009415DA /* AppDelegate.m */; };
 		F15A0F1E210860CB009415DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0F1D210860CB009415DA /* ViewController.m */; };
 		F15A0F21210860CB009415DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15A0F1F210860CB009415DA /* Main.storyboard */; };
@@ -55,6 +57,10 @@
 		F106584A2109783300E2B49D /* UIImage+SGAddRoundedCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGAddRoundedCorner.m"; sourceTree = "<group>"; };
 		F106584C210B1F2900E2B49D /* UIBezierPath+SGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+SGUtils.h"; sourceTree = "<group>"; };
 		F106584D210B1F2900E2B49D /* UIBezierPath+SGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+SGUtils.m"; sourceTree = "<group>"; };
+		F1065857210EC8D100E2B49D /* UIImageView+SGAddRoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SGAddRoundCorner.m"; sourceTree = "<group>"; };
+		F1065858210EC8D100E2B49D /* UIImage+SGAddRoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGAddRoundCorner.m"; sourceTree = "<group>"; };
+		F1065859210EC8D100E2B49D /* UIImage+SGAddRoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGAddRoundCorner.h"; sourceTree = "<group>"; };
+		F106585A210EC8D100E2B49D /* UIImageView+SGAddRoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SGAddRoundCorner.h"; sourceTree = "<group>"; };
 		F15A0F16210860CB009415DA /* SGImageAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGImageAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A0F19210860CB009415DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F15A0F1A210860CB009415DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,6 +152,10 @@
 				F15A0F1A210860CB009415DA /* AppDelegate.m */,
 				F15A0F1C210860CB009415DA /* ViewController.h */,
 				F15A0F1D210860CB009415DA /* ViewController.m */,
+				F1065859210EC8D100E2B49D /* UIImage+SGAddRoundCorner.h */,
+				F1065858210EC8D100E2B49D /* UIImage+SGAddRoundCorner.m */,
+				F106585A210EC8D100E2B49D /* UIImageView+SGAddRoundCorner.h */,
+				F1065857210EC8D100E2B49D /* UIImageView+SGAddRoundCorner.m */,
 				F15A0F4E21086434009415DA /* demo.jpg */,
 				F15A0F1F210860CB009415DA /* Main.storyboard */,
 				F15A0F22210860CD009415DA /* Assets.xcassets */,
@@ -482,6 +492,8 @@
 				F106584B2109783300E2B49D /* UIImage+SGAddRoundedCorner.m in Sources */,
 				F15A0F4D2108610D009415DA /* UIImage+SGAdd.m in Sources */,
 				F15A0F29210860CD009415DA /* main.m in Sources */,
+				F106585C210EC8D100E2B49D /* UIImage+SGAddRoundCorner.m in Sources */,
+				F106585B210EC8D100E2B49D /* UIImageView+SGAddRoundCorner.m in Sources */,
 				F15A0F1B210860CB009415DA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
