@@ -11,29 +11,52 @@
 
 @implementation UIImageView (SGAddRoundCorner)
 
-- (void)addRoundedCornerWithRadius:(CGFloat)cornerRadius size:(CGSize)size color:(UIColor *)color
+- (void)addRoundedCornerWithRadius:(CGFloat)cornerRadius size:(CGSize)size color:(UIColor *)color completeBlock:(roundedCompleteBlock)completeBlock
 {
+    [UIImage imageWithCornerRadius:cornerRadius rectCorner:SGRectCornerTopLeft color:color completeBlock:^(UIImage *image) {
+        UIImageView *topLeftImgeView = [[UIImageView alloc]initWithImage:image];
+        [self addSubview:topLeftImgeView];
+        
+        [topLeftImgeView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.equalTo(self);
+            make.size.mas_equalTo(CGSizeMake(cornerRadius, cornerRadius));
+        }];
+        
+    }];
     
-    UIImage *leftTopImage = [UIImage imageWithCornerRadius:cornerRadius rectCorner:SGRectCornerTopLeft color:color];
-    UIImageView *leftTopImgeView = [[UIImageView alloc]initWithImage:leftTopImage];
-    leftTopImgeView.frame = CGRectMake(0, 0, cornerRadius, cornerRadius);
-    [self addSubview:leftTopImgeView];
+    [UIImage imageWithCornerRadius:cornerRadius rectCorner:SGRectCornerTopRight color:color completeBlock:^(UIImage *image){
+        UIImageView *topRightImageView = [[UIImageView alloc]initWithImage:image];
+        [self addSubview:topRightImageView];
+        
+        [topRightImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.right.equalTo(self);
+            make.size.mas_equalTo(CGSizeMake(cornerRadius, cornerRadius));
+        }];
+        
+    }];
     
+    [UIImage imageWithCornerRadius:cornerRadius rectCorner:SGRectCornerBottomLeft color:color completeBlock:^(UIImage *image) {
+        UIImageView *bottomLeftImageView = [[UIImageView alloc]initWithImage:image];
+        [self addSubview:bottomLeftImageView];
+        
+        [bottomLeftImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.equalTo(self);
+            make.size.mas_equalTo(CGSizeMake(cornerRadius, cornerRadius));
+        }];
+    }];
     
-    UIImage *topRightImage = [UIImage imageWithCornerRadius:cornerRadius rectCorner:SGRectCornerTopRight color:color];
-    UIImageView *topRightImageView = [[UIImageView alloc]initWithImage:topRightImage];
-    topRightImageView.frame = CGRectMake(size.width - cornerRadius, 0, cornerRadius, cornerRadius);
-    [self addSubview:topRightImageView];
+    [UIImage imageWithCornerRadius:cornerRadius rectCorner:SGRectCornerBottomRight color:color completeBlock:^(UIImage *image) {
+        UIImageView *bottomRightImageView = [[UIImageView alloc]initWithImage:image];
+        [self addSubview:bottomRightImageView];
+        [bottomRightImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.right.bottom.equalTo(self);
+            make.size.mas_equalTo(CGSizeMake(cornerRadius, cornerRadius));
+        }];
+    }];
     
-    UIImage *bottomLeftImage = [UIImage imageWithCornerRadius:cornerRadius rectCorner:SGRectCornerBottomLeft color:color];
-    UIImageView *bottomLeftImageView = [[UIImageView alloc]initWithImage:bottomLeftImage];
-    bottomLeftImageView.frame = CGRectMake(0, size.height - cornerRadius, cornerRadius, cornerRadius);
-    [self addSubview:bottomLeftImageView];
-
-    UIImage *bottomRightImage = [UIImage imageWithCornerRadius:cornerRadius rectCorner:SGRectCornerBottomRight color:color];
-    UIImageView *bottomRightImageView = [[UIImageView alloc]initWithImage:bottomRightImage];
-    bottomRightImageView.frame = CGRectMake(size.width - cornerRadius, size.height - cornerRadius, cornerRadius, cornerRadius);
-    [self addSubview:bottomRightImageView];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        completeBlock();
+    });
     
 }
 

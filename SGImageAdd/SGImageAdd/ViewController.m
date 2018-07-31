@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "UIImageView+SGAddRoundCorner.m"
 @interface ViewController ()
 
 @end
@@ -18,19 +17,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self test];
     
 }
-
-- (void)test
-{
-    UIImageView *catView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    catView.image = [UIImage imageNamed:@"1.jpg"];
-    [catView addRoundedCornerWithRadius:20 size:CGSizeMake(100, 100) color:[UIColor whiteColor]];
-    [self.view addSubview:catView];
-    
-}
-
 
 
 
