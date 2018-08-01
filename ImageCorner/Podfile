@@ -8,6 +8,7 @@ target 'ImageCorner' do
   # Pods for ImageCorner
    pod 'SDWebImage'
    #pod 'YYCache'
+   pod 'Masonry'
 
   target 'ImageCornerTests' do
     inherit! :search_paths

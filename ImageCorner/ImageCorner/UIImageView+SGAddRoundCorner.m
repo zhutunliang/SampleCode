@@ -8,6 +8,7 @@
 
 #import "UIImageView+SGAddRoundCorner.h"
 #import "UIImage+SGAddRoundCorner.h"
+#import <Masonry.h>
 
 @implementation UIImageView (SGAddRoundCorner)
 
