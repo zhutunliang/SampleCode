@@ -27,6 +27,7 @@
     CFTimeInterval end = CACurrentMediaTime();
     CFTimeInterval elapsed = (end - start) * 1000;
     NSLog(@"111%f",elapsed);
+    
 }
 
 - (void)test

@@ -1,0 +1,72 @@
+ios 系统框架：
+
+可触摸层  （Cocoa Touch Layer）
+媒体层    （Media Layer）
+核心服务层 （Core Service Layer）
+核心系统层 （Core OS Layer）
+
+1. 可触摸层： 主要提供用户交互相关的服务如界面控件，事件管理，通知中心，地图，包含的框架如下：
+   UIKit               (界面相关)
+   EventKit            (日历时间提醒等)
+   Notification Center (通知中心)
+   MapKit              (地图)
+   Address Book        (联系人)
+   iAD                （广告）
+   PushKit            （push机制）
+
+
+2.媒体层 （Media）
+  媒体层主要提供图像引擎，音频引擎，视频引擎框架。
+
+  图像引擎 （Core Graphic ,CoreImage, Core Animation,OpenGL ES）
+  音频引擎 （Core Audio , AV Foundation , OpenAL）
+  视频引擎 （AV Foundation ,Core Media）
+
+
+ 3.核心服务层 （Core Service Layer）
+   核心服务层 为程序提供基础的系统服务。 例如，网络访问，浏览器引擎，定位，文件夹访问，数据库访问等。
+
+   网络访问           （CFNetwork）
+   数据访问           （Core Data）
+   定位功能           （Core Location）
+   重力加速度，陀螺仪  （Core Motion）
+   基础功能如NSString  (Foundation)
+   浏览器引擎         （WebKit）
+   JavaScript引擎    （JavaScript）
+
+4.核心系统层 （Core OS Layer）
+  核心系统层为上层提供最基础的服务如 操作系统内核服务，本地认证，安全，加速等。
+
+  操作系统内核服务 （BSD sockets , I/O 访问，内存申请，文件系统，数学计算 等）
+  本地认证 （指纹识别验证等）
+  安全 （提供管理证书，公钥，秘钥等的接口）
+  加速 （执行数学，大数字，以及DSP运算，这些接口与iOS设备硬件相匹配）
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

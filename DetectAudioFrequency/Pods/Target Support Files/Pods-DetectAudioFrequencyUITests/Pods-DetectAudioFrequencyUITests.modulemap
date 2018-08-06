@@ -1,0 +1,6 @@
+framework module Pods_DetectAudioFrequencyUITests {
+  umbrella header "Pods-DetectAudioFrequencyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

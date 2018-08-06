@@ -7,127 +7,160 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F1735ECE211167820093EEAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1735ECD211167820093EEAD /* AppDelegate.m */; };
-		F1735ED1211167820093EEAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1735ED0211167820093EEAD /* ViewController.m */; };
-		F1735ED4211167820093EEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1735ED2211167820093EEAD /* Main.storyboard */; };
-		F1735ED6211167830093EEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1735ED5211167830093EEAD /* Assets.xcassets */; };
-		F1735ED9211167830093EEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1735ED7211167830093EEAD /* LaunchScreen.storyboard */; };
-		F1735EDC211167830093EEAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1735EDB211167830093EEAD /* main.m */; };
-		F1735EE6211167830093EEAD /* DetectAudioFrequencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1735EE5211167830093EEAD /* DetectAudioFrequencyTests.m */; };
-		F1735EF1211167830093EEAD /* DetectAudioFrequencyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1735EF0211167830093EEAD /* DetectAudioFrequencyUITests.m */; };
+		259D22D72804A8F27A455D0D /* Pods_DetectAudioFrequencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A8B7AA5486EEF653C298D3 /* Pods_DetectAudioFrequencyTests.framework */; };
+		79CFBDDF2F90848BB8060D9A /* Pods_DetectAudioFrequency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B8B4318AFC41CCFFA58305 /* Pods_DetectAudioFrequency.framework */; };
+		AD5AEF65CACC499988912987 /* Pods_DetectAudioFrequencyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47DD23FA629B146BECBE63 /* Pods_DetectAudioFrequencyUITests.framework */; };
+		F16215B52111929A00DB72A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16215B42111929A00DB72A5 /* AppDelegate.swift */; };
+		F16215B72111929A00DB72A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16215B62111929A00DB72A5 /* ViewController.swift */; };
+		F16215BA2111929A00DB72A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16215B82111929A00DB72A5 /* Main.storyboard */; };
+		F16215BC2111929B00DB72A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16215BB2111929B00DB72A5 /* Assets.xcassets */; };
+		F16215BF2111929B00DB72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16215BD2111929B00DB72A5 /* LaunchScreen.storyboard */; };
+		F16215CA2111929B00DB72A5 /* DetectAudioFrequencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16215C92111929B00DB72A5 /* DetectAudioFrequencyTests.swift */; };
+		F16215D52111929B00DB72A5 /* DetectAudioFrequencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16215D42111929B00DB72A5 /* DetectAudioFrequencyUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F1735EE2211167830093EEAD /* PBXContainerItemProxy */ = {
+		F16215C62111929B00DB72A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F1735EC1211167820093EEAD /* Project object */;
+			containerPortal = F16215A92111929A00DB72A5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F1735EC8211167820093EEAD;
+			remoteGlobalIDString = F16215B02111929A00DB72A5;
 			remoteInfo = DetectAudioFrequency;
 		};
-		F1735EED211167830093EEAD /* PBXContainerItemProxy */ = {
+		F16215D12111929B00DB72A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F1735EC1211167820093EEAD /* Project object */;
+			containerPortal = F16215A92111929A00DB72A5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F1735EC8211167820093EEAD;
+			remoteGlobalIDString = F16215B02111929A00DB72A5;
 			remoteInfo = DetectAudioFrequency;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F1735EC9211167820093EEAD /* DetectAudioFrequency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectAudioFrequency.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1735ECC211167820093EEAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F1735ECD211167820093EEAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F1735ECF211167820093EEAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F1735ED0211167820093EEAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F1735ED3211167820093EEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F1735ED5211167830093EEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F1735ED8211167830093EEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F1735EDA211167830093EEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1735EDB211167830093EEAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F1735EE1211167830093EEAD /* DetectAudioFrequencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectAudioFrequencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1735EE5211167830093EEAD /* DetectAudioFrequencyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectAudioFrequencyTests.m; sourceTree = "<group>"; };
-		F1735EE7211167830093EEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1735EEC211167830093EEAD /* DetectAudioFrequencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectAudioFrequencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1735EF0211167830093EEAD /* DetectAudioFrequencyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectAudioFrequencyUITests.m; sourceTree = "<group>"; };
-		F1735EF2211167830093EEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B8B4318AFC41CCFFA58305 /* Pods_DetectAudioFrequency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetectAudioFrequency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14944BA2AAB8C2EE3C42B7C3 /* Pods-DetectAudioFrequencyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectAudioFrequencyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DetectAudioFrequencyTests/Pods-DetectAudioFrequencyTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D47DD23FA629B146BECBE63 /* Pods_DetectAudioFrequencyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetectAudioFrequencyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F29A19D7C7417E9A7E4827 /* Pods-DetectAudioFrequency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectAudioFrequency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DetectAudioFrequency/Pods-DetectAudioFrequency.debug.xcconfig"; sourceTree = "<group>"; };
+		4BC862AC4F2575B0535A2768 /* Pods-DetectAudioFrequency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectAudioFrequency.release.xcconfig"; path = "Pods/Target Support Files/Pods-DetectAudioFrequency/Pods-DetectAudioFrequency.release.xcconfig"; sourceTree = "<group>"; };
+		832D689F206613BE1BBCF040 /* Pods-DetectAudioFrequencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectAudioFrequencyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DetectAudioFrequencyUITests/Pods-DetectAudioFrequencyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91A8B7AA5486EEF653C298D3 /* Pods_DetectAudioFrequencyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetectAudioFrequencyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85D3A8FF130A50952444FE1 /* Pods-DetectAudioFrequencyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectAudioFrequencyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DetectAudioFrequencyTests/Pods-DetectAudioFrequencyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA325419AA8DD01103E2AC33 /* Pods-DetectAudioFrequencyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectAudioFrequencyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DetectAudioFrequencyUITests/Pods-DetectAudioFrequencyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F16215B12111929A00DB72A5 /* DetectAudioFrequency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectAudioFrequency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16215B42111929A00DB72A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F16215B62111929A00DB72A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F16215B92111929A00DB72A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F16215BB2111929B00DB72A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F16215BE2111929B00DB72A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F16215C02111929B00DB72A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F16215C52111929B00DB72A5 /* DetectAudioFrequencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectAudioFrequencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16215C92111929B00DB72A5 /* DetectAudioFrequencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectAudioFrequencyTests.swift; sourceTree = "<group>"; };
+		F16215CB2111929B00DB72A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F16215D02111929B00DB72A5 /* DetectAudioFrequencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectAudioFrequencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16215D42111929B00DB72A5 /* DetectAudioFrequencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectAudioFrequencyUITests.swift; sourceTree = "<group>"; };
+		F16215D62111929B00DB72A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F1735EC6211167820093EEAD /* Frameworks */ = {
+		F16215AE2111929A00DB72A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CFBDDF2F90848BB8060D9A /* Pods_DetectAudioFrequency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1735EDE211167830093EEAD /* Frameworks */ = {
+		F16215C22111929B00DB72A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259D22D72804A8F27A455D0D /* Pods_DetectAudioFrequencyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1735EE9211167830093EEAD /* Frameworks */ = {
+		F16215CD2111929B00DB72A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5AEF65CACC499988912987 /* Pods_DetectAudioFrequencyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F1735EC0211167820093EEAD = {
+		326309B971237E052373C6F1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F1735ECB211167820093EEAD /* DetectAudioFrequency */,
-				F1735EE4211167830093EEAD /* DetectAudioFrequencyTests */,
-				F1735EEF211167830093EEAD /* DetectAudioFrequencyUITests */,
-				F1735ECA211167820093EEAD /* Products */,
+				42F29A19D7C7417E9A7E4827 /* Pods-DetectAudioFrequency.debug.xcconfig */,
+				4BC862AC4F2575B0535A2768 /* Pods-DetectAudioFrequency.release.xcconfig */,
+				B85D3A8FF130A50952444FE1 /* Pods-DetectAudioFrequencyTests.debug.xcconfig */,
+				14944BA2AAB8C2EE3C42B7C3 /* Pods-DetectAudioFrequencyTests.release.xcconfig */,
+				BA325419AA8DD01103E2AC33 /* Pods-DetectAudioFrequencyUITests.debug.xcconfig */,
+				832D689F206613BE1BBCF040 /* Pods-DetectAudioFrequencyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DCC709D2BA3531EF4292768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07B8B4318AFC41CCFFA58305 /* Pods_DetectAudioFrequency.framework */,
+				91A8B7AA5486EEF653C298D3 /* Pods_DetectAudioFrequencyTests.framework */,
+				2D47DD23FA629B146BECBE63 /* Pods_DetectAudioFrequencyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F16215A82111929A00DB72A5 = {
+			isa = PBXGroup;
+			children = (
+				F16215B32111929A00DB72A5 /* DetectAudioFrequency */,
+				F16215C82111929B00DB72A5 /* DetectAudioFrequencyTests */,
+				F16215D32111929B00DB72A5 /* DetectAudioFrequencyUITests */,
+				F16215B22111929A00DB72A5 /* Products */,
+				326309B971237E052373C6F1 /* Pods */,
+				7DCC709D2BA3531EF4292768 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		F1735ECA211167820093EEAD /* Products */ = {
+		F16215B22111929A00DB72A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F1735EC9211167820093EEAD /* DetectAudioFrequency.app */,
-				F1735EE1211167830093EEAD /* DetectAudioFrequencyTests.xctest */,
-				F1735EEC211167830093EEAD /* DetectAudioFrequencyUITests.xctest */,
+				F16215B12111929A00DB72A5 /* DetectAudioFrequency.app */,
+				F16215C52111929B00DB72A5 /* DetectAudioFrequencyTests.xctest */,
+				F16215D02111929B00DB72A5 /* DetectAudioFrequencyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F1735ECB211167820093EEAD /* DetectAudioFrequency */ = {
+		F16215B32111929A00DB72A5 /* DetectAudioFrequency */ = {
 			isa = PBXGroup;
 			children = (
-				F1735ECC211167820093EEAD /* AppDelegate.h */,
-				F1735ECD211167820093EEAD /* AppDelegate.m */,
-				F1735ECF211167820093EEAD /* ViewController.h */,
-				F1735ED0211167820093EEAD /* ViewController.m */,
-				F1735ED2211167820093EEAD /* Main.storyboard */,
-				F1735ED5211167830093EEAD /* Assets.xcassets */,
-				F1735ED7211167830093EEAD /* LaunchScreen.storyboard */,
-				F1735EDA211167830093EEAD /* Info.plist */,
-				F1735EDB211167830093EEAD /* main.m */,
+				F16215B42111929A00DB72A5 /* AppDelegate.swift */,
+				F16215B62111929A00DB72A5 /* ViewController.swift */,
+				F16215B82111929A00DB72A5 /* Main.storyboard */,
+				F16215BB2111929B00DB72A5 /* Assets.xcassets */,
+				F16215BD2111929B00DB72A5 /* LaunchScreen.storyboard */,
+				F16215C02111929B00DB72A5 /* Info.plist */,
 			);
 			path = DetectAudioFrequency;
 			sourceTree = "<group>";
 		};
-		F1735EE4211167830093EEAD /* DetectAudioFrequencyTests */ = {
+		F16215C82111929B00DB72A5 /* DetectAudioFrequencyTests */ = {
 			isa = PBXGroup;
 			children = (
-				F1735EE5211167830093EEAD /* DetectAudioFrequencyTests.m */,
-				F1735EE7211167830093EEAD /* Info.plist */,
+				F16215C92111929B00DB72A5 /* DetectAudioFrequencyTests.swift */,
+				F16215CB2111929B00DB72A5 /* Info.plist */,
 			);
 			path = DetectAudioFrequencyTests;
 			sourceTree = "<group>";
 		};
-		F1735EEF211167830093EEAD /* DetectAudioFrequencyUITests */ = {
+		F16215D32111929B00DB72A5 /* DetectAudioFrequencyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F1735EF0211167830093EEAD /* DetectAudioFrequencyUITests.m */,
-				F1735EF2211167830093EEAD /* Info.plist */,
+				F16215D42111929B00DB72A5 /* DetectAudioFrequencyUITests.swift */,
+				F16215D62111929B00DB72A5 /* Info.plist */,
 			);
 			path = DetectAudioFrequencyUITests;
 			sourceTree = "<group>";
@@ -135,13 +168,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1735EC8211167820093EEAD /* DetectAudioFrequency */ = {
+		F16215B02111929A00DB72A5 /* DetectAudioFrequency */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1735EF5211167830093EEAD /* Build configuration list for PBXNativeTarget "DetectAudioFrequency" */;
+			buildConfigurationList = F16215D92111929B00DB72A5 /* Build configuration list for PBXNativeTarget "DetectAudioFrequency" */;
 			buildPhases = (
-				F1735EC5211167820093EEAD /* Sources */,
-				F1735EC6211167820093EEAD /* Frameworks */,
-				F1735EC7211167820093EEAD /* Resources */,
+				891933E1124345C939638BE1 /* [CP] Check Pods Manifest.lock */,
+				F16215AD2111929A00DB72A5 /* Sources */,
+				F16215AE2111929A00DB72A5 /* Frameworks */,
+				F16215AF2111929A00DB72A5 /* Resources */,
+				D2E02C31F0C6BD1959BB3600 /* [CP] Embed Pods Frameworks */,
+				B99EA1A5B808B27B4A1CECD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,68 +185,75 @@
 			);
 			name = DetectAudioFrequency;
 			productName = DetectAudioFrequency;
-			productReference = F1735EC9211167820093EEAD /* DetectAudioFrequency.app */;
+			productReference = F16215B12111929A00DB72A5 /* DetectAudioFrequency.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F1735EE0211167830093EEAD /* DetectAudioFrequencyTests */ = {
+		F16215C42111929B00DB72A5 /* DetectAudioFrequencyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1735EF8211167830093EEAD /* Build configuration list for PBXNativeTarget "DetectAudioFrequencyTests" */;
+			buildConfigurationList = F16215DC2111929B00DB72A5 /* Build configuration list for PBXNativeTarget "DetectAudioFrequencyTests" */;
 			buildPhases = (
-				F1735EDD211167830093EEAD /* Sources */,
-				F1735EDE211167830093EEAD /* Frameworks */,
-				F1735EDF211167830093EEAD /* Resources */,
+				7A22D8FD6FEEB1A7A749AA2D /* [CP] Check Pods Manifest.lock */,
+				F16215C12111929B00DB72A5 /* Sources */,
+				F16215C22111929B00DB72A5 /* Frameworks */,
+				F16215C32111929B00DB72A5 /* Resources */,
+				006DCE0AC5EEB85270243B12 /* [CP] Embed Pods Frameworks */,
+				DE140AC67FDA479C0B9F6D21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F1735EE3211167830093EEAD /* PBXTargetDependency */,
+				F16215C72111929B00DB72A5 /* PBXTargetDependency */,
 			);
 			name = DetectAudioFrequencyTests;
 			productName = DetectAudioFrequencyTests;
-			productReference = F1735EE1211167830093EEAD /* DetectAudioFrequencyTests.xctest */;
+			productReference = F16215C52111929B00DB72A5 /* DetectAudioFrequencyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F1735EEB211167830093EEAD /* DetectAudioFrequencyUITests */ = {
+		F16215CF2111929B00DB72A5 /* DetectAudioFrequencyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1735EFB211167830093EEAD /* Build configuration list for PBXNativeTarget "DetectAudioFrequencyUITests" */;
+			buildConfigurationList = F16215DF2111929B00DB72A5 /* Build configuration list for PBXNativeTarget "DetectAudioFrequencyUITests" */;
 			buildPhases = (
-				F1735EE8211167830093EEAD /* Sources */,
-				F1735EE9211167830093EEAD /* Frameworks */,
-				F1735EEA211167830093EEAD /* Resources */,
+				DA08A6C48DDC98E6C5440DFD /* [CP] Check Pods Manifest.lock */,
+				F16215CC2111929B00DB72A5 /* Sources */,
+				F16215CD2111929B00DB72A5 /* Frameworks */,
+				F16215CE2111929B00DB72A5 /* Resources */,
+				FC41F29F31FA6EE203CD33A8 /* [CP] Embed Pods Frameworks */,
+				FC63C0669E4723D60AB5BA7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F1735EEE211167830093EEAD /* PBXTargetDependency */,
+				F16215D22111929B00DB72A5 /* PBXTargetDependency */,
 			);
 			name = DetectAudioFrequencyUITests;
 			productName = DetectAudioFrequencyUITests;
-			productReference = F1735EEC211167830093EEAD /* DetectAudioFrequencyUITests.xctest */;
+			productReference = F16215D02111929B00DB72A5 /* DetectAudioFrequencyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F1735EC1211167820093EEAD /* Project object */ = {
+		F16215A92111929A00DB72A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "搜狗";
 				TargetAttributes = {
-					F1735EC8211167820093EEAD = {
+					F16215B02111929A00DB72A5 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					F1735EE0211167830093EEAD = {
+					F16215C42111929B00DB72A5 = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = F1735EC8211167820093EEAD;
+						TestTargetID = F16215B02111929A00DB72A5;
 					};
-					F1735EEB211167830093EEAD = {
+					F16215CF2111929B00DB72A5 = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = F1735EC8211167820093EEAD;
+						TestTargetID = F16215B02111929A00DB72A5;
 					};
 				};
 			};
-			buildConfigurationList = F1735EC4211167820093EEAD /* Build configuration list for PBXProject "DetectAudioFrequency" */;
+			buildConfigurationList = F16215AC2111929A00DB72A5 /* Build configuration list for PBXProject "DetectAudioFrequency" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,37 +261,37 @@
 				en,
 				Base,
 			);
-			mainGroup = F1735EC0211167820093EEAD;
-			productRefGroup = F1735ECA211167820093EEAD /* Products */;
+			mainGroup = F16215A82111929A00DB72A5;
+			productRefGroup = F16215B22111929A00DB72A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1735EC8211167820093EEAD /* DetectAudioFrequency */,
-				F1735EE0211167830093EEAD /* DetectAudioFrequencyTests */,
-				F1735EEB211167830093EEAD /* DetectAudioFrequencyUITests */,
+				F16215B02111929A00DB72A5 /* DetectAudioFrequency */,
+				F16215C42111929B00DB72A5 /* DetectAudioFrequencyTests */,
+				F16215CF2111929B00DB72A5 /* DetectAudioFrequencyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F1735EC7211167820093EEAD /* Resources */ = {
+		F16215AF2111929A00DB72A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1735ED9211167830093EEAD /* LaunchScreen.storyboard in Resources */,
-				F1735ED6211167830093EEAD /* Assets.xcassets in Resources */,
-				F1735ED4211167820093EEAD /* Main.storyboard in Resources */,
+				F16215BF2111929B00DB72A5 /* LaunchScreen.storyboard in Resources */,
+				F16215BC2111929B00DB72A5 /* Assets.xcassets in Resources */,
+				F16215BA2111929A00DB72A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1735EDF211167830093EEAD /* Resources */ = {
+		F16215C32111929B00DB72A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1735EEA211167830093EEAD /* Resources */ = {
+		F16215CE2111929B00DB72A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,61 +300,212 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		006DCE0AC5EEB85270243B12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DetectAudioFrequencyTests/Pods-DetectAudioFrequencyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A22D8FD6FEEB1A7A749AA2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DetectAudioFrequencyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		891933E1124345C939638BE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DetectAudioFrequency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B99EA1A5B808B27B4A1CECD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DetectAudioFrequency/Pods-DetectAudioFrequency-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E02C31F0C6BD1959BB3600 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DetectAudioFrequency/Pods-DetectAudioFrequency-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Beethoven/Beethoven.framework",
+				"${BUILT_PRODUCTS_DIR}/Pitchy/Pitchy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Beethoven.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pitchy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DetectAudioFrequency/Pods-DetectAudioFrequency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA08A6C48DDC98E6C5440DFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DetectAudioFrequencyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE140AC67FDA479C0B9F6D21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DetectAudioFrequencyTests/Pods-DetectAudioFrequencyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC41F29F31FA6EE203CD33A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DetectAudioFrequencyUITests/Pods-DetectAudioFrequencyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC63C0669E4723D60AB5BA7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DetectAudioFrequencyUITests/Pods-DetectAudioFrequencyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		F1735EC5211167820093EEAD /* Sources */ = {
+		F16215AD2111929A00DB72A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1735ED1211167820093EEAD /* ViewController.m in Sources */,
-				F1735EDC211167830093EEAD /* main.m in Sources */,
-				F1735ECE211167820093EEAD /* AppDelegate.m in Sources */,
+				F16215B72111929A00DB72A5 /* ViewController.swift in Sources */,
+				F16215B52111929A00DB72A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1735EDD211167830093EEAD /* Sources */ = {
+		F16215C12111929B00DB72A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1735EE6211167830093EEAD /* DetectAudioFrequencyTests.m in Sources */,
+				F16215CA2111929B00DB72A5 /* DetectAudioFrequencyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1735EE8211167830093EEAD /* Sources */ = {
+		F16215CC2111929B00DB72A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1735EF1211167830093EEAD /* DetectAudioFrequencyUITests.m in Sources */,
+				F16215D52111929B00DB72A5 /* DetectAudioFrequencyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F1735EE3211167830093EEAD /* PBXTargetDependency */ = {
+		F16215C72111929B00DB72A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F1735EC8211167820093EEAD /* DetectAudioFrequency */;
-			targetProxy = F1735EE2211167830093EEAD /* PBXContainerItemProxy */;
+			target = F16215B02111929A00DB72A5 /* DetectAudioFrequency */;
+			targetProxy = F16215C62111929B00DB72A5 /* PBXContainerItemProxy */;
 		};
-		F1735EEE211167830093EEAD /* PBXTargetDependency */ = {
+		F16215D22111929B00DB72A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F1735EC8211167820093EEAD /* DetectAudioFrequency */;
-			targetProxy = F1735EED211167830093EEAD /* PBXContainerItemProxy */;
+			target = F16215B02111929A00DB72A5 /* DetectAudioFrequency */;
+			targetProxy = F16215D12111929B00DB72A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F1735ED2211167820093EEAD /* Main.storyboard */ = {
+		F16215B82111929A00DB72A5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F1735ED3211167820093EEAD /* Base */,
+				F16215B92111929A00DB72A5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F1735ED7211167830093EEAD /* LaunchScreen.storyboard */ = {
+		F16215BD2111929B00DB72A5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F1735ED8211167830093EEAD /* Base */,
+				F16215BE2111929B00DB72A5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,7 +513,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F1735EF3211167830093EEAD /* Debug */ = {
+		F16215D72111929B00DB72A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -374,10 +568,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		F1735EF4211167830093EEAD /* Release */ = {
+		F16215D82111929B00DB72A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -425,12 +621,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		F1735EF6211167830093EEAD /* Debug */ = {
+		F16215DA2111929B00DB72A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F29A19D7C7417E9A7E4827 /* Pods-DetectAudioFrequency.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,12 +641,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arithmetic.DetectAudioFrequency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F1735EF7211167830093EEAD /* Release */ = {
+		F16215DB2111929B00DB72A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC862AC4F2575B0535A2768 /* Pods-DetectAudioFrequency.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,13 +660,16 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arithmetic.DetectAudioFrequency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		F1735EF9211167830093EEAD /* Debug */ = {
+		F16215DD2111929B00DB72A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B85D3A8FF130A50952444FE1 /* Pods-DetectAudioFrequencyTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DetectAudioFrequencyTests/Info.plist;
@@ -476,14 +680,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arithmetic.DetectAudioFrequencyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetectAudioFrequency.app/DetectAudioFrequency";
 			};
 			name = Debug;
 		};
-		F1735EFA211167830093EEAD /* Release */ = {
+		F16215DE2111929B00DB72A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14944BA2AAB8C2EE3C42B7C3 /* Pods-DetectAudioFrequencyTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DetectAudioFrequencyTests/Info.plist;
@@ -494,14 +701,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arithmetic.DetectAudioFrequencyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetectAudioFrequency.app/DetectAudioFrequency";
 			};
 			name = Release;
 		};
-		F1735EFC211167830093EEAD /* Debug */ = {
+		F16215E02111929B00DB72A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA325419AA8DD01103E2AC33 /* Pods-DetectAudioFrequencyUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DetectAudioFrequencyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,14 +721,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arithmetic.DetectAudioFrequencyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = DetectAudioFrequency;
 			};
 			name = Debug;
 		};
-		F1735EFD211167830093EEAD /* Release */ = {
+		F16215E12111929B00DB72A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832D689F206613BE1BBCF040 /* Pods-DetectAudioFrequencyUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DetectAudioFrequencyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,6 +741,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arithmetic.DetectAudioFrequencyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = DetectAudioFrequency;
 			};
@@ -536,43 +750,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1735EC4211167820093EEAD /* Build configuration list for PBXProject "DetectAudioFrequency" */ = {
+		F16215AC2111929A00DB72A5 /* Build configuration list for PBXProject "DetectAudioFrequency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1735EF3211167830093EEAD /* Debug */,
-				F1735EF4211167830093EEAD /* Release */,
+				F16215D72111929B00DB72A5 /* Debug */,
+				F16215D82111929B00DB72A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1735EF5211167830093EEAD /* Build configuration list for PBXNativeTarget "DetectAudioFrequency" */ = {
+		F16215D92111929B00DB72A5 /* Build configuration list for PBXNativeTarget "DetectAudioFrequency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1735EF6211167830093EEAD /* Debug */,
-				F1735EF7211167830093EEAD /* Release */,
+				F16215DA2111929B00DB72A5 /* Debug */,
+				F16215DB2111929B00DB72A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1735EF8211167830093EEAD /* Build configuration list for PBXNativeTarget "DetectAudioFrequencyTests" */ = {
+		F16215DC2111929B00DB72A5 /* Build configuration list for PBXNativeTarget "DetectAudioFrequencyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1735EF9211167830093EEAD /* Debug */,
-				F1735EFA211167830093EEAD /* Release */,
+				F16215DD2111929B00DB72A5 /* Debug */,
+				F16215DE2111929B00DB72A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1735EFB211167830093EEAD /* Build configuration list for PBXNativeTarget "DetectAudioFrequencyUITests" */ = {
+		F16215DF2111929B00DB72A5 /* Build configuration list for PBXNativeTarget "DetectAudioFrequencyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1735EFC211167830093EEAD /* Debug */,
-				F1735EFD211167830093EEAD /* Release */,
+				F16215E02111929B00DB72A5 /* Debug */,
+				F16215E12111929B00DB72A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F1735EC1211167820093EEAD /* Project object */;
+	rootObject = F16215A92111929A00DB72A5 /* Project object */;
 }
