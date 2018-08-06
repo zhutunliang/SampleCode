@@ -1,0 +1,16 @@
+osx_image: xcode9
+language: swift
+
+before_install:
+- brew update
+- if brew outdated | grep -qx carthage; then brew upgrade carthage; fi
+- travis_wait 35 carthage bootstrap --platform iOS,Mac
+
+script:
+- xcodebuild clean build -project Pitchy.xcodeproj -scheme "Pitchy-Mac" -sdk macosx | xcpretty
+- xcodebuild test -project Pitchy.xcodeproj -scheme "Pitchy-Mac" -sdk macosx | xcpretty
+- xcodebuild clean build -project Pitchy.xcodeproj -scheme "Pitchy-iOS" -sdk iphonesimulator | xcpretty
+- xcodebuild test -project Pitchy.xcodeproj -scheme "Pitchy-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' | xcpretty
+
+notifications:
+  email: false
