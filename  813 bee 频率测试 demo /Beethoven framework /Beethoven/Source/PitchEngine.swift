@@ -3,7 +3,7 @@ import AVFoundation
 
 @objc
 public protocol PitchEngineDelegate :NSObjectProtocol {
-  func pitchEngine(_ pitchEngine: PitchEngine,withfrequency: Float)
+  func pitchEngine(_ pitchEngine: PitchEngine,frequency: Float)
 }
 
 public final class PitchEngine :NSObject {
@@ -131,7 +131,7 @@ extension PitchEngine: SignalTrackerDelegate {
             
             DispatchQueue.main.async { [weak self] in
             guard let `self` = self else { return }
-            self.delegate?.pitchEngine(self, withfrequency: frequency)
+            self.delegate?.pitchEngine(self, frequency: frequency)
           }
         } catch {
           DispatchQueue.main.async {

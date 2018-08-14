@@ -198,7 +198,7 @@ SWIFT_CLASS("_TtC9Beethoven11PitchEngine")
 
 SWIFT_PROTOCOL("_TtP9Beethoven19PitchEngineDelegate_")
 @protocol PitchEngineDelegate <NSObject>
-- (void)pitchEngine:(PitchEngine * _Nonnull)pitchEngine withfrequency:(float)withfrequency;
+- (void)pitchEngine:(PitchEngine * _Nonnull)pitchEngine frequency:(float)frequency;
 @end
 
 #if __has_attribute(external_source_symbol)

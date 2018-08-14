@@ -20,7 +20,6 @@
     self.pitchEgine = [[PitchEngine alloc]initWithDelegate:self];
     //    self.pitchEgine.active
     [self test];
-    
 }
 
 
@@ -46,8 +45,8 @@
 }
 
 
-- (void)pitchEngine:(PitchEngine * _Nonnull)pitchEngine withfrequency:(float)withfrequency {
-    NSLog(@"频率频率%f",withfrequency);
+- (void)pitchEngine:(PitchEngine * _Nonnull)pitchEngine frequency:(float)frequency {
+    NSLog(@"频率频率%f",frequency);
 }
 
 
