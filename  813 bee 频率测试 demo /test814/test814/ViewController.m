@@ -20,6 +20,8 @@
     self.pitchEgine = [[PitchEngine alloc]initWithDelegate:self];
     //    self.pitchEgine.active
     [self test];
+    
+    // ..
 }
 
 
