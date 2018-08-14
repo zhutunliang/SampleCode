@@ -1,0 +1,103 @@
+dispatch_group
+
+需求：有4个异步请求，A，B，C，D，我们希望在ABCD都执行完以后，再执行任务E。
+
+解决方案：dispatch_group
+
+1. dispatch_group_enter / dispatch_group_leave
+
+2. dispatch_async_group(group,queue,^(){})
+
+注意点：
+
+1. group 对于 在不同队列中的任务，是不区分的，只要放在group中，都是一视同仁。
+ 
+2. dispatch_async_group(group,queue,^(){}) ,如果异步中，再执行异步，则group只会对外层的异步同步。
+   dispatch_group_enter / dispatch_group_leave 则是可以解决异步中异步的同步！
+
+示例代码如下：
+
+- (void)groupSync1
+{
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_queue_t globalQueue = dispatch_queue_create("ted.queue.next1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_enter(group);
+    dispatch_async(globalQueue, ^{
+        dispatch_async(queue, ^{
+            sleep(3);
+            NSLog(@"任务一完成了");
+            dispatch_group_leave(group);
+        });
+    });
+    
+    dispatch_group_enter(group);
+    dispatch_async(queue, ^{
+        dispatch_async(queue, ^{
+            sleep(5);
+            NSLog(@"任务二完成了");
+            dispatch_group_leave(group);
+        });
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"任务都完成了");
+    });
+}
+
+
+- (void)groupSync
+{
+    dispatch_queue_t dispatchQueue = dispatch_queue_create("ted.queue.next1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
+    dispatch_group_t dispatchGroup = dispatch_group_create();
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+        
+        dispatch_async(globalQueue, ^{
+            
+            sleep(5);
+            NSLog(@"任务一完成");
+        });
+    });
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+        
+        dispatch_async(globalQueue, ^{
+            
+            sleep(8);
+            NSLog(@"任务二完成");
+        });
+    });
+    dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
+        NSLog(@"notify：任务都完成了");
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

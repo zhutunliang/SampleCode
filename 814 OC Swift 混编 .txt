@@ -1,0 +1,78 @@
+oc 、 swift  混编 /// Carthage 简单使用
+
+1. cocoapods 更新到 1.5.0 ，可以直接给swift打静态包，#use framework! 
+   但是，打出的静态包（.a），集成到项目中，有各种各样的错误。
+
+ 2. 同1 ，当我们手动打包时，可以选择 打包成动态/静态， 如果选择打包成静态，则集成到项目中
+    也是出现如1所示的问题。
+
+ 3. 基于以上两点经验（可能有纰漏），决定将swift 打包成动态包(.framework). 设置两点：
+    build setttings -> Mach-O Type 为 Dynamic Library
+    选择target-> edit scheme -> 将 run 的 debug 改成 release
+
+    选择 Generic iOS Device ,cmd+b 打出真机版 framework
+    选择任意一个模拟器，cmd+b 打出模拟器版 framework
+
+    Show in Finder, 则可以在对应路径中找到打包好的framework
+
+    lipo -info framework路径地址    （查看此framwork 包含的信息）
+    lipo -create 模拟器framework路径 真机framework路径 -output 真机framework路径 
+   （将真机，测试机framework 合并即可）
+
+   4.以上是关于swift打动态包的过程。下面是如何将framwork 集成到项目中。
+
+     最重要的一点：由于我们打出的是动态包，所以 , 在 General-> Embedded binaries 中 添加 framework , 此时， 被添加的framwork 出现在 Build Phases -> embedded framework 中。 
+
+     futhure more : Build Setting -> Build Options -> Always imbed standrd swift libraries  ，将其置为 YES
+
+    5.OC  Swift 混编，包括 OC 调用 Swift ,Swift 调用 OC 。
+
+     OC -> Swift , 需要一个中间文件，***-swift.h ,将需要暴露的Swift 类，方法名，转换成 OC 。
+     因此，Swift 的类，或 协议， 能够被 OC 调用的前提是，其是继承 NSObject ,或是 NSObjectProtocol。
+     Swift 方法 ，属性 能够OC 访问到的前提是，@objc 。 且方法里用到的所有类都是继承NSObject ,递归如此。
+
+     Swift -> OC ,也是需要一个桥接文件，由于此次未涉及，暂且不表。
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

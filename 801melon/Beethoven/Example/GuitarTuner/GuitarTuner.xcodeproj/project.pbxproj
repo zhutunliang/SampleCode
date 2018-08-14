@@ -126,7 +126,6 @@
 				D57D40FA1BE95A350026B005 /* Frameworks */,
 				D57D40FB1BE95A350026B005 /* Resources */,
 				9A1FE1805890F1ADECBB5C91 /* [CP] Embed Pods Frameworks */,
-				C388AD861F71DDEC8588850E /* [CP] Copy Pods Resources */,
 				BBF9D165E87DC40FC3115EAE /* 📦 Embed Pods Frameworks */,
 				6F77F9EE9820226CF5C57DF3 /* 📦 Copy Pods Resources */,
 			);
@@ -271,21 +270,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTuner/Pods-GuitarTuner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C388AD861F71DDEC8588850E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTuner/Pods-GuitarTuner-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

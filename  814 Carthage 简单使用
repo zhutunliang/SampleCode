@@ -1,0 +1,19 @@
+ 简单介绍一下 Carthage 
+
+    同 Cocoapods 类似，Carthage 也是包管理工具。但是，比 Cocoapods 轻便很多。
+
+    首先，非侵入性，不会侵入到项目，更不会创建Workspace .
+    然后，没有一个中心化的仓库。
+
+    使用方法： 用Carthage 将 github上的仓库，打包成framework ，手动集成到项目中。
+
+    1.新建 Cartfile 文件，
+      vim Cartfile
+      github "SwiftyJson/SwiftyJson"
+
+    2. 保存文件，输入命令行 carthage update .
+
+      然后，Carthage 就开始抓取，并使用 xcodebuild 构建第三方库。
+
+    3. update 完成后，便可在根目录/Carthage 中看到打包好的framework.
+

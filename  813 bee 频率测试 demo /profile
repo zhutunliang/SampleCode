@@ -1,0 +1,18 @@
+/******Beethoven framework ******/
+
+制作 swift framework
+
+1. dynamic 动态库
+
+2. edit scheme - run - release
+
+
+/******test814 ******/
+
+将1 制作的 framework 集成到测试项目中
+
+配置的点：
+
+1. Build Settings -> Build Options -> Always embed swift standard Library -> YES
+
+2. General -> embedded binaries -> + framework

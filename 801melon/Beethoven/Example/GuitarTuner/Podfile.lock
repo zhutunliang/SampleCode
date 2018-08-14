@@ -10,9 +10,15 @@ DEPENDENCIES:
   - Cartography
   - Hue (~> 3.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cartography
+    - Hue
+    - Pitchy
+
 EXTERNAL SOURCES:
   Beethoven:
-    :path: ../../
+    :path: "../../"
 
 SPEC CHECKSUMS:
   Beethoven: cb1b2164b170c7539455abb32bbfc6717ef2fa63
@@ -22,4 +28,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 38c90b3edadf248124cd55d1086854ecf4e5c51b
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
