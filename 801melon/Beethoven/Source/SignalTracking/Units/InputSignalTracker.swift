@@ -39,8 +39,9 @@ final class InputSignalTracker: SignalTracker {
   // MARK: - Tracking
 
   func start() throws {
-    try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
-
+    try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .mixWithOthers)
+    try session.setActive(true)
+//    try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
     // check input type
     let currentRoute = session.currentRoute
     if currentRoute.outputs.count != 0 {
@@ -58,8 +59,10 @@ final class InputSignalTracker: SignalTracker {
     guard let inputNode = audioEngine?.inputNode else {
       throw InputSignalTrackerError.inputNodeMissing
     }
-
+    //
+//    let format = AVAudioFormat(standardFormatWithSampleRate: 44100, channels: 1)
     let format = inputNode.outputFormat(forBus: bus)
+    
 
     inputNode.installTap(onBus: bus, bufferSize: bufferSize, format: format) { buffer, time in
       guard let averageLevel = self.averageLevel else { return }
@@ -70,7 +73,8 @@ final class InputSignalTracker: SignalTracker {
         DispatchQueue.main.async {
           self.delegate?.signalTracker(self, didReceiveBuffer: buffer, atTime: time)
         }
-      } else {
+      }
+      else {
         DispatchQueue.main.async {
           self.delegate?.signalTrackerWentBelowLevelThreshold(self)
         }

@@ -87,30 +87,30 @@ public final class PitchEngine {
         guard let weakSelf = self else { return }
 
         guard granted else {
-          weakSelf.delegate?.pitchEngine(weakSelf,
-                                         didReceiveError: Error.recordPermissionDenied)
-          return
+            weakSelf.delegate?.pitchEngine(weakSelf,
+                                           didReceiveError: Error.recordPermissionDenied)
+            return
         }
-
+        
         DispatchQueue.main.async {
-          weakSelf.activate()
+            weakSelf.activate()
         }
-      }
+        }
     }
-  }
-
-  public func stop() {
-    signalTracker.stop()
-    active = false
-  }
-
-  func activate() {
-    do {
-      try signalTracker.start()
-      active = true
-    } catch {
-      delegate?.pitchEngine(self, didReceiveError: error)
     }
+    
+    public func stop() {
+        signalTracker.stop()
+        active = false
+    }
+    
+    func activate() {
+        do {
+            try signalTracker.start()
+            active = true
+        } catch {
+            delegate?.pitchEngine(self, didReceiveError: error)
+        }
   }
 }
 
@@ -125,11 +125,11 @@ extension PitchEngine: SignalTrackerDelegate {
 
         do {
           let transformedBuffer = try self.estimator.transformer.transform(buffer: buffer)
-            print("采样频率%f",time.sampleRate)
+//            print("采样频率%f",time.sampleRate)
           let frequency = try self.estimator.estimateFrequency(
             sampleRate: Float(time.sampleRate),
             buffer: transformedBuffer)
-            print("基频%f",frequency)
+//            print("基频%f",frequency)
           let pitch = try Pitch(frequency: Double(frequency))
 
           DispatchQueue.main.async { [weak self] in

@@ -8,8 +8,10 @@ protocol Estimator {
 
 extension Estimator {
   func estimateFrequency(sampleRate: Float, location: Int, bufferCount: Int) -> Float {
-    return Float(location) * sampleRate / (Float(bufferCount) * 2)
-  }
+    let frequency = Float(location) * sampleRate / (Float(bufferCount) * 2)
+    print(location,sampleRate,bufferCount,frequency)
+    return frequency
+ }
 
   func maxBufferIndex(from buffer: [Float]) throws -> Int {
     guard buffer.count > 0 else {
@@ -19,7 +21,8 @@ extension Estimator {
     guard let index = buffer.maxIndex else {
       throw EstimationError.unknownMaxIndex
     }
-
+    
+    print(index);
     return index
   }
 

@@ -1,5 +1,5 @@
 import UIKit
-import Hue
+//import Hue
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   private func applyStyles() {
     let navigationBar = UINavigationBar.appearance()
     navigationBar.barStyle = .black
-    navigationBar.barTintColor = UIColor(hex: "111011")
+    navigationBar.barTintColor = UIColor.red
+//    navigationBar.barTintColor = UIColor(hex: "111011")
     navigationBar.isTranslucent = false
     navigationBar.shadowImage = UIImage()
     navigationBar.titleTextAttributes = [

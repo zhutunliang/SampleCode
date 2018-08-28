@@ -23,6 +23,7 @@ final class ViewController: UIViewController {
     label.textAlignment = .center
     label.numberOfLines = 0
     label.sizeToFit()
+    label.textColor = UIColor.black
     return label
   }()
 
@@ -53,7 +54,8 @@ final class ViewController: UIViewController {
     super.viewDidLoad()
 
     title = "Tuner".uppercased()
-    view.backgroundColor = UIColor(hex: "111011")
+    view.backgroundColor = UIColor.white
+//    view.backgroundColor = UIColor(hex: "111011")
 
     [actionButton, offsetLabel].forEach {
       view.addSubview($0)
@@ -65,6 +67,7 @@ final class ViewController: UIViewController {
   // MARK: - Action methods
 
   @objc func actionButtonDidPress(_ button: UIButton) {
+    
     let text = pitchEngine.active
       ? NSLocalizedString("Start", comment: "").uppercased()
       : NSLocalizedString("Stop", comment: "").uppercased()
@@ -136,7 +139,7 @@ extension ViewController: PitchEngineDelegate {
     let offsetPercentage = pitch.closestOffset.percentage
     let absOffsetPercentage = abs(offsetPercentage)
 
-    print("pitch : \(pitch.note.string) - percentage : \(offsetPercentage)")
+//    print("pitch : \(pitch.note.string) - percentage : \(offsetPercentage)")
 
     guard absOffsetPercentage > 1.0 else {
       return
@@ -147,13 +150,13 @@ extension ViewController: PitchEngineDelegate {
 
 //    offsetLabel.text = "\(prefix)" + String(format:"%.2f", absOffsetPercentage) + "%"
     
-    if frequency > 100 && frequency < 200 {
+//    if frequency > 100 && frequency < 200 {
       ViewController.realFrequency = frequency
-    }
+//    }
   
     offsetLabel.text = String(format:"%f", ViewController.realFrequency )
 
-    offsetLabel.textColor = color
+//    offsetLabel.textColor = color
 //    offsetLabel.isHidden = false
   }
 
@@ -162,6 +165,6 @@ extension ViewController: PitchEngineDelegate {
   }
 
   public func pitchEngineWentBelowLevelThreshold(_ pitchEngine: PitchEngine) {
-    print("Below level threshold")
+//    print("Below level threshold")
   }
 }

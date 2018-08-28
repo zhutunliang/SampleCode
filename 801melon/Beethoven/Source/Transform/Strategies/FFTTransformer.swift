@@ -3,6 +3,7 @@ import Accelerate
 
 final class FFTTransformer: Transformer {
   func transform(buffer: AVAudioPCMBuffer) throws -> Buffer {
+    
     let frameCount = buffer.frameLength
     let log2n = UInt(round(log2(Double(frameCount))))
     let bufferSizePOT = Int(1 << log2n)
@@ -26,6 +27,7 @@ final class FFTTransformer: Transformer {
     temp.withMemoryRebound(to: DSPComplex.self, capacity: transferBuffer.count) { (typeConvertedTransferBuffer) -> Void in
         vDSP_ctoz(typeConvertedTransferBuffer, 2, &output, 1, vDSP_Length(inputCount))
     }
+    //
 
     vDSP_fft_zrip(fftSetup!, &output, 1, log2n, FFTDirection(FFT_FORWARD))
 
@@ -35,7 +37,7 @@ final class FFTTransformer: Transformer {
     var normalizedMagnitudes = [Float](repeating: 0.0, count: inputCount)
     vDSP_vsmul(sqrtq(magnitudes), 1, [2.0 / Float(inputCount)],
       &normalizedMagnitudes, 1, vDSP_Length(inputCount))
-
+//    print(normalizedMagnitudes);
     let buffer = Buffer(elements: normalizedMagnitudes)
 
     vDSP_destroy_fftsetup(fftSetup)
